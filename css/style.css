@@ -44,6 +44,7 @@ body {
 
 .logo{
     height: 35px;
+    animation: fade_in 2s ease;
 }
 
 .text_box{
@@ -56,6 +57,7 @@ body {
 .heading_primary{
     color: #FFF;
     text-transform: uppercase;
+    backface-visibility: hidden;
 }
 
 .heading_primary_main{
@@ -63,6 +65,7 @@ body {
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
+    animation: move_in_left 1s ease-out;
 }
 
 .heading_primary_sub{
@@ -70,4 +73,46 @@ body {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 17.5px;
+    animation: move_in_right 1s ease-out;
+}
+
+@keyframes fade_in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes move_in_left {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes move_in_right {
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
