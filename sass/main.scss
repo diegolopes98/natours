@@ -8,9 +8,17 @@ Dark green: #28b485
 */
 
 // Colors
+
+//// Primary
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark:    #28b485;
+
+//// Greys
+$color-grey-dark : #777;
+
+//// Whites
+$color-white: #FFF;
 
 *,
 *::after,
@@ -28,7 +36,7 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     line-height: 1.7;
-    color: #777;
+    color: $color-grey-dark;
     padding: 1.5rem;
     box-sizing: border-box;
 }
@@ -67,7 +75,7 @@ body {
 }
 
 .heading_primary{
-    color: #FFF;
+    color: $color-white;
     text-transform: uppercase;
     backface-visibility: hidden;
     margin-bottom: 6rem;
@@ -164,8 +172,8 @@ body {
 }
 
 .btn--white {
-    background-color: #fff;
-    color: #777;
+    background-color: $color-white;
+    color: $color-grey-dark;
 
 }
 
@@ -183,7 +191,7 @@ body {
 }
 
 .btn--white::after{
-    background-color: #fff;
+    background-color: $color-white;
 }
 
 .btn:hover::after {
