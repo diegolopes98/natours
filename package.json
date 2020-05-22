@@ -4,7 +4,11 @@
   "description": "Simple page to estudy html and scss",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css"
+    "compile:sass": "node-sass sass/main.scss css/style.css",
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "server": "live-server --port=9090",
+    "build": "npm run compile:sass",
+    "start": "concurrently \"npm run watch:sass\" \"npm run server\""
   },
   "repository": {
     "type": "git",
@@ -25,6 +29,8 @@
   },
   "homepage": "https://github.com/diegolopes98/natours#readme",
   "devDependencies": {
+    "concurrently": "^5.2.0",
+    "live-server": "^1.2.1",
     "node-sass": "^4.14.1"
   }
 }
