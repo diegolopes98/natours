@@ -1,0 +1,27 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Simple page to estudy html and scss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegolopes98/natours.git"
+  },
+  "keywords": [
+    "scss",
+    "natours",
+    "npm",
+    "css",
+    "html",
+    "frontend"
+  ],
+  "author": "Diego",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegolopes98/natours/issues"
+  },
+  "homepage": "https://github.com/diegolopes98/natours#readme"
+}
