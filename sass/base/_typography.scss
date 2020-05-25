@@ -28,3 +28,20 @@ body {
         animation: move_in_right 1s ease-out;
     }
 }
+
+.heading_secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    background-clip: text; // for compatiblity
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+    &:hover {
+        transform: skewX(12deg);
+        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+    }
+}
