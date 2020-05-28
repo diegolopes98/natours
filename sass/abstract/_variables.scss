@@ -5,6 +5,13 @@ $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark:    #28b485;
 
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+ 
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+
 //// Greys
 $color-grey-dark : #777;
 $color-grey-light-1 : #f7f7f7;
@@ -15,7 +22,7 @@ $color-white: #FFF;
 //// Blacks
 $color-black: #000;
 $color-black-opacity-light: rgba($color-black, .2);
-$color-black-opacity-medium: rgba($color-black, .3);
+$color-black-opacity-medium: rgba($color-black, .35);
 $color-black-opacity-dark: rgba($color-black, .5);
 
 // Grid
