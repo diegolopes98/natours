@@ -41,7 +41,7 @@ body {
     letter-spacing: .2rem;
     transition: all .2s;
     &:hover {
-        transform: skewX(12deg);
+        transform: scale(1.025);
         text-shadow: .5rem 1rem 2rem $color-black-opacity-light;
     }
 }
