@@ -171,9 +171,9 @@ body {
   animation: move_in_bottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
-.btn-text {
+.btn_text {
   border-radius: .2rem; }
-  .btn-text:link, .btn-text:visited {
+  .btn_text:link, .btn_text:visited {
     font-size: 1.6rem;
     color: #55c57a;
     display: inline-block;
@@ -181,12 +181,12 @@ body {
     border-bottom: 0.1rem solid #55c57a;
     padding: .3rem;
     transition: all .2s; }
-  .btn-text:hover {
+  .btn_text:hover {
     background-color: #55c57a;
     color: #FFF;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     transform: translateY(-0.2rem); }
-  .btn-text:active {
+  .btn_text:active {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     transform: translateY(0); }
 
@@ -328,6 +328,53 @@ body {
     font-size: 6rem;
     font-weight: 100; }
 
+.story {
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
+  background-color: #FFF;
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  font-size: 1.6rem;
+  transform: skewX(-12deg); }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    background-color: aliceblue;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    transform: translate(-3rem) skewX(12deg);
+    position: relative; }
+  .story__image {
+    height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all .5s; }
+  .story:hover .story__image {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%); }
+  .story__text {
+    transform: skewX(12deg); }
+  .story__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 1.7rem;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden; }
+  .story:hover .story__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -394,3 +441,7 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
+
+.section_stories {
+  padding: 15rem 0;
+  background-color: #f7f7f7; }
