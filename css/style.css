@@ -97,33 +97,33 @@ body {
     margin-bottom: 3rem; }
 
 .u_center_text {
-  text-align: center; }
+  text-align: center !important; }
 
 .u_margin_bottom_small {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem !important; }
 
 .u_margin_bottom_medium {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
 
 .u_margin_bottom_big {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem !important; }
 
 .u_margin_bottom_huge {
-  margin-bottom: 10rem; }
+  margin-bottom: 10rem !important; }
 
 .u_margin_top_small {
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem !important; }
 
 .u_margin_top_medium {
-  margin-top: 4rem; }
+  margin-top: 4rem !important; }
 
 .u_margin_top_big {
-  margin-top: 8rem; }
+  margin-top: 8rem !important; }
 
 .u_margin_top_huge {
-  margin-top: 10rem; }
+  margin-top: 10rem !important; }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -139,7 +139,8 @@ body {
     transform: scale(1.5);
     opacity: 0; }
 
-.btn:active {
+.btn:active, .btn:focus {
+  outline: none;
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35); }
 
@@ -376,6 +377,45 @@ body {
   margin: .7rem 2rem;
   display: inline-block;
   transition: all .3s; }
+
+.form__radio_group {
+  width: 45%;
+  display: inline-block; }
+
+.form__radio_input {
+  display: none; }
+
+.form__radio_label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 3rem; }
+
+.form__radio_button {
+  height: 2rem;
+  width: 2rem;
+  border: 3px solid #55c57a;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 0rem;
+  left: 0; }
+  .form__radio_button::after {
+    content: "";
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #55c57a;
+    opacity: 0;
+    transition: all .3s; }
+
+.form__radio_input:checked + .form__radio_label .form__radio_button::after {
+  opacity: 1; }
 
 .story {
   width: 75%;
