@@ -8,8 +8,21 @@
 }
 
 html {
-    // definition of 1 rem
-    font-size: 62.5%;
+    // definition of 1 rem in default browser font-size definition (16px)
+    font-size: 62.5%; //10px
+
+    @include responsive(tab_land) {
+        font-size: 56.25%; //9px
+    }
+
+    // this media also set to phone width
+    @include responsive(tab_port) {
+        font-size: 50%; //8px
+    }
+
+    @include responsive(big_desktop) {
+        font-size: 75%;  //12px
+    }
 }
 
 body {
