@@ -4,6 +4,10 @@
     padding: 10rem 0;
     font-size: 1.4rem;
 
+    @include responsive(tab_port) {
+        padding: 8rem 0;
+    }
+
     &__logo_box {
         text-align: center;
     }
@@ -20,6 +24,11 @@
         color: inherit;
         padding-top: 2rem;
         display: inline-block;
+
+        @include responsive(tab_port) {
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__copyright {
