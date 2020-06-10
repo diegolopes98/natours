@@ -16,6 +16,10 @@
         width: 15rem;
         height: auto;
         margin-bottom: 8rem;
+
+        @include responsive(tab_port) {
+            margin-bottom: 4rem;
+        }
     }
 
     &__navigation,
