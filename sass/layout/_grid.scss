@@ -12,7 +12,6 @@
 
     @include responsive(tab_port) {
         max-width: $grid-width-small;
-        padding: 0 3rem;
     }
 
     @include clearfix;
