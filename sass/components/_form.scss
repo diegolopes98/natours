@@ -15,6 +15,10 @@
         display: block;
         transition: all .3s;
 
+        @include responsive(tab_port) {
+            width: 100%;
+        }
+
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem $color-black-opacity-light;
@@ -47,6 +51,11 @@
     &__radio_group {
         width: 45%;
         display: inline-block;
+
+        @include responsive(tab_port) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
     }
     
     &__radio_input {
@@ -85,7 +94,6 @@
             transition: all .3s;
         }
     }
-
     
     &__radio_input:checked + &__radio_label &__radio_button::after {
         opacity: 1;

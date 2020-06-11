@@ -146,6 +146,7 @@
     @include responsive(tab_port) {
         height: auto;
         border-radius: 1rem;
+        overflow: hidden;
         background-color: $color-white;
         box-shadow: 0 1.5rem 4rem $color-black-opacity-light;
     
