@@ -467,6 +467,9 @@ body {
   width: 90%;
   display: block;
   transition: all .3s; }
+  @media screen and (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -491,6 +494,10 @@ body {
 .form__radio_group {
   width: 45%;
   display: inline-block; }
+  @media screen and (max-width: 56.25em) {
+    .form__radio_group {
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .form__radio_input {
   display: none; }
@@ -857,6 +864,7 @@ body {
   .footer__logo_box {
     text-align: center; }
   .footer__logo {
+    display: inline-block;
     width: 15rem;
     height: auto;
     margin-bottom: 8rem; }
