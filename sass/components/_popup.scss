@@ -92,5 +92,22 @@
         -webkit-hyphens: auto;
         hyphens: auto;
     }
+    
+    @include responsive(phone) {
+
+      &__content {
+        height: 95vh;
+        width: 90vw;
+      }
+
+      &__left {
+        display: none;
+      }
+
+      &__text {
+        -moz-column-count: 1;
+        column-count: 1;
+      }
+    }
 
 }

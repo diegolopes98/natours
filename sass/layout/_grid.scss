@@ -11,7 +11,11 @@
     }
 
     @include responsive(tab_port) {
-        max-width: $grid-width-small;
+      max-width: $grid-width-small;
+    }
+
+    @include responsive(phone) {
+      max-width: $grid-width-very-small;
     }
 
     @include clearfix;
