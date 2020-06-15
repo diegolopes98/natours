@@ -4,6 +4,9 @@
   "description": "Simple page to estudy html and scss",
   "main": "index.js",
   "scripts": {
+    "watch:sass": "node-sass sass/main.scss build/styles.css -w",
+    "liveserver": "live-server --port=9090",
+    "star:dev": "npm-run-all --parallel liveserver watch:sass",
     "compile:sass" : "node-sass sass/main.scss build/styles.comp.css",
     "concat:css" : "concat -o build/styles.concat.css sass/vendors/icon-font.css build/styles.comp.css",
     "prefix:css" : "postcss --use autoprefixer -b 'last 10 versions' build/styles.concat.css -o build/styles.prefix.css",
