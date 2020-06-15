@@ -92,13 +92,14 @@
         -webkit-hyphens: auto;
         hyphens: auto;
     }
+
+    @include responsive(tab_port) {
+      &__left {
+        display: none;
+      }
+    }
     
     @include responsive(phone) {
-
-      &__content {
-        height: 95vh;
-        width: 90vw;
-      }
 
       &__left {
         display: none;
