@@ -77,8 +77,10 @@
     }
     
     &__text {
-        font-size: 1.4rem;
+        height: 14.5rem;
+        font-size: 1.1rem;
         margin-bottom: 4rem;
+        overflow: scroll;
 
         -moz-column-count: 2;
         -moz-column-gap: 4rem;
@@ -93,7 +95,7 @@
         hyphens: auto;
     }
 
-    @include responsive(tab_port) {
+    @include responsive(tab_land) {
       &__left {
         display: none;
       }
